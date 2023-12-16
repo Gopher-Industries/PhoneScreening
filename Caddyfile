@@ -1,0 +1,8 @@
+example.com {
+	encode zstd gzip
+	reverse_proxy ivr:5000
+	basicauth * {
+		user encryptedpassword
+	}
+}
+
